@@ -30,9 +30,10 @@ mv _site/* .
 rm -R _site/
 
 # Push to master.
+git remote set-url origin https://sockeqwe:$GITHUB_TOKEN@github.com/TheContext/TheContext.github.io.git
 git add -fA
 git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
-git push -f -q https://sockeqwe:$GITHUB_TOKEN@github.com/TheContext/TheContext.github.io.git master
+git push -f -q origin master
 
 # Move back to previous branch.
 git checkout -
