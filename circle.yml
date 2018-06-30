@@ -1,20 +1,49 @@
-machine:
-  ruby:
-    version: 2.5.1
-  node:
-    version: 8.0.0
+# Ruby CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-ruby/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+       - image: circleci/ruby:2.4.1-node-browsers
+      
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/postgres:9.4
 
-dependencies:
-  pre:
-    - ./bin/setup
+    working_directory: ~/repo
 
-test:
-  post:
-    - bundle exec jekyll build
-    - rm -R ./_site/node_modules
-    - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml"
+    steps:
+      - checkout
 
-general:
-  branches:
-    only:
-     - development # list of branches to build
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "Gemfile.lock" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+            
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+      # setup
+      - run: ./bin/setup
+      - run:
+          name: test
+          command: |
+            bundle exec jekyll build
+            rm -R ./_site/node_modules
+            bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml"
+
+
+      # collect reports
+      - store_test_results:
+          path: /tmp/test-results
+      - store_artifacts:
+          path: /tmp/test-results
+          destination: test-results
