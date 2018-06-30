@@ -34,7 +34,7 @@ jobs:
       # Setup
       - run: 
           name: setup
-          command: npm run setup
+          command: sudo npm run setup
 
       # Testing
       - run:
