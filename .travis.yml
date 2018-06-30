@@ -9,10 +9,9 @@ before_script:
 - "./bin/setup"
 - bundle exec jekyll build
 script:
-- sudo npm run setup
-- sudo npm run publish
 - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension
   --check-opengraph --url-ignore "feed.xml,/facebook.com/"
+- "./bin/deploy"
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
