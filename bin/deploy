@@ -12,7 +12,7 @@ echo "Started deploying"
 
 git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis CI"
-git remote add origin-pages https://${GITHUB_TOKEN}@github.com/MVSE-outreach/resources.git 
+git remote add origin-pages https://${GITHUB_TOKEN}@github.com/TheContext/TheContext.github.io.git
 
 # Checkout we have to deploy to master branch.
 if [ `git branch | grep master` ]
