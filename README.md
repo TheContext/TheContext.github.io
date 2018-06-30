@@ -1,3 +1,16 @@
+# Deployment
+This repository is containing our website.
+The workflow to deploy the website  is as follows:
+1. Push you changes to `development` branch  (not `master` branch)
+2. Travis CI will build `development` branch and transforms all stuff to proper Jekyll format
+3. Once transformation is done, Travis CI pushes the static site (jekyll) to `master` (master is displayed to the user). 
+
+Please note that `master` branch gets overwritten (force pushed) all the time by Travis. Therefore we must use `development` as our main branch. Think of `master` as the branch just where static side gets deployed to. Don't touch `master` directly.
+
+---
+
+# Original description
+
 ![](_assets/images/documentation/chalk-intro@2x.png)
 
 Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.
