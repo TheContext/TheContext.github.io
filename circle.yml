@@ -36,6 +36,11 @@ jobs:
           name: setup
           command: sudo npm run setup
 
+      # Deploy
+      - run: 
+          name: Deploy
+          command: npm run deloy
+
       # Testing
       - run:
           name: test
@@ -44,10 +49,6 @@ jobs:
             rm -R ./_site/node_modules
             bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml"
       
-      # Deploy
-      - run: 
-          name: Deploy
-          command: npm run deloy
 
       # collect reports
       - store_test_results:
