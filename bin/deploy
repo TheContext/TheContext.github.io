@@ -7,6 +7,12 @@ set -e
 
 echo "Started deploying"
 
+git config user.email "${github_email}"
+git config user.name "Hannes Dorfmann"
+
+echo "user email"
+git config user.email
+
 # Checkout we have to deploy to master branch.
 if [ `git branch | grep master` ]
 then
@@ -24,9 +30,6 @@ mv _site/* .
 rm -R _site/
 
 # Push to master.
-git config --global user.email "${github_email}"
-git config --global user.name "Hannes Dorfmann"
-
 git add -fA
 git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
 git push -f -q git push https://sockeqwe:${github_access_token}@github.com/TheContext/TheContext.github.io.git master
