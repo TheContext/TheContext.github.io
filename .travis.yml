@@ -1,23 +1,21 @@
-sudo: false
-
-# version automatically picked up from .ruby-version
+sudo: true
 language: ruby
 cache: bundler
-
 before_install:
-  - gem update --system
-  - gem install bundler jekyll
-
+- gem update --system
+- gem install bundler jekyll
 before_script:
-  - chmod +x ./bin/setup
-  - ./bin/setup
-  - bundle exec jekyll build
-
-script: bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml,/facebook.com/"
-
+- chmod +x ./bin/setup
+- "./bin/setup"
+- bundle exec jekyll build
+script:
+- sudo npm run setup
+- sudo npm run publish
+- bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension
+  --check-opengraph --url-ignore "feed.xml,/facebook.com/"
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-    - LC_ALL=en_US.UTF-8
-    - JEKYLL_ENV=production
-
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - LC_ALL=en_US.UTF-8
+  - JEKYLL_ENV=production
+  - secure: qpTFOkXPfcfBLwbKNWeTILctGh8E3fCLQLkGqiNcqpo1PqaFGOauGgBFu6klcRYMA+1jn+sg0VwnNPTT1nOXOrPdFZiqAlZTWPD644w1fS9sTjEBBXh0BKpSIhYfLfmsCcCG6t6isN3ruqItXeMgujaypcW60EBFf4lm6FGjFQfABEyvPlu/VSdFkdG5xc3qFqQ9qxgYnqtZ4/k5C6OXAJAa76EGNbV3WlzOeVhpNILo5KhYG1txFlJ3wdQSMsxz+hreyaRRnOhxBNfxUJVZzKTggDPWb1tKoBNGsq++GgbaEHyf+2zn2FtibVMfSdPVQMRFMoYIh+g8JrahZVwDDNP66tfT/ZXicS2Ou73jw3Am3A4Qjfnu2yds+lJmA24JGLnHV30Lm6dGXc3RjLDm/tPpI+s5oPKpi+lHwd20nalnYU6b8M0/L1CWdsPX8CYxfwUoNRsVMJAGkAN5zsn99Q48yDgvDR/cM0vHnmOxgErQKjlRwsYpUKDqfBKYhbTythD18IXBxrgr0bdOn0wKRXP2YKGr/c2idaGcfpdMsx37T2/cKmWxu9a1cVTES0K+YBNm6YCY7YpLLf5ILaoeRUclcSw2MQ2IeigqIUAGtmomj1mYRsmOwc0oaNBRsFk4bDCCX8dievAEQX+hMR8NLE3cV2Kl6o+x8AJL+uMhhPg=
