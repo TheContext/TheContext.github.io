@@ -39,7 +39,7 @@ jobs:
       # Deploy
       - run: 
           name: Deploy
-          command: npm run deloy
+          command: npm run deploy
 
       # Testing
       - run:
