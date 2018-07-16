@@ -58,12 +58,13 @@
                 </div>
               </div>
             </div>
+            <p class="direct-audio-file-download">
+                <a href="{{ page.mp3 }}" target="_blank">Download .mp3 file</a>
+              </p>
           </div>
 
           <div class="article-content">
-            <p>
-              <a href="{{ page.mp3 }}" target="_blank">Download .mp3 file</a>
-            </p>
+           
             {{ content }}
           </div>
           <div class="article-share">
@@ -101,8 +102,6 @@
       "songs": [
         {
           "name": "{{ page.title }}",
-          "artist": "The Context",
-          "album": "The Context",
           "url": "{{ page.mp3 }}",
           "cover_art_url": "{% asset 'album_art.png' @path %}"
         }

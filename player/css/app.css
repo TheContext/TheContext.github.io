@@ -4,6 +4,10 @@
 /*
   2. Components
 */
+p.direct-audio-file-download{
+  text-align:center; 
+  margin-bottom:80px;
+}
 div.control-container {
     margin-top: 10px;
     margin-bottom: 50px;
