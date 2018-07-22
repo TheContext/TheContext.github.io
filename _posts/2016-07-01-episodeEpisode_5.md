@@ -1,6 +1,6 @@
 ---
 layout: episode
-title: "Episode 5: Android TV"
+title: "Episode 6, Part1: Continuous Integration (CI) &amp; Continuous Delivery (CD)"
 description: "In this episode we have talked about Indie Development."
 tags: []
 mp3: "https://artemzin.com/static/thecontext/episodes/The.Context.episode.5.mp3"
@@ -13,6 +13,7 @@ mp3: "https://artemzin.com/static/thecontext/episodes/The.Context.episode.5.mp3"
 ## Hosts
 
 * Artem Zinnatullin: [Twitter](https://twitter.com/artemzin), [GitHub](https://github.com/artem-zinnatullin)
+* Hannes Dorfmann: [Twitter](https://twitter.com/sockeqwe), [GitHub](https://github.com/sockeqwe)
 
 ## Notes
 
