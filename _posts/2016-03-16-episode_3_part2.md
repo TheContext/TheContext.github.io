@@ -8,11 +8,11 @@ mp3: "https://github.com/artem-zinnatullin/TheContext-Podcast/releases/download/
 
 ## Guests
 
-* David Karnok: [Twitter](https://twitter.com/akarnokd), [GitHub](https://github.com/akarnokd)
+* David Karnok: [Twitter](https://twitter.com/akarnokd), [GitHub](https://github.com/akarnokd), [website](http://akarnokd.blogspot.com)
 
 ## Hosts
 
-* Artem Zinnatullin: [Twitter](https://twitter.com/artemzin), [GitHub](https://github.com/artem-zinnatullin)
+* Artem Zinnatullin: [Twitter](https://twitter.com/artemzin), [GitHub](https://github.com/artem-zinnatullin), [website](https://artemzin.com)
 
 ## Notes
 

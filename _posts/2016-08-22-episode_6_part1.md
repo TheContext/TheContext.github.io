@@ -1,19 +1,19 @@
 ---
 layout: episode
-title: "Episode 6‚: Android TV"
-description: "In this episode we have talked about Indie Development."
+title: "Episode 6, Part1: Continuous Integration (CI) &amp; Continuous Delivery (CD)"
+description: "In this episode we have talked about Continious Integration (CI) and Continuous Delivery (CD). Fernando Cejas gives us some insights how Soundcloud do CI and CD."
 tags: []
 mp3: "https://artemzin.com/static/thecontext/episodes/The.Context.episode.6.part1.mp3"
 ---
 
 ## Guests
 
-* Fernando Cejas: [Twitter](https://twitter.com/fernando_cejas), [GitHub](https://github.com/android10)
+* Fernando Cejas: [Twitter](https://twitter.com/fernando_cejas), [GitHub](https://github.com/android10), [website](http://fernandocejas.com)
 
 ## Hosts
 
-* Artem Zinnatullin: [Twitter](https://twitter.com/artemzin), [GitHub](https://github.com/artem-zinnatullin)
-* Hannes Dorfmann: [Twitter](https://twitter.com/sockeqwe), [GitHub](https://github.com/sockeqwe)
+* Artem Zinnatullin: [Twitter](https://twitter.com/artemzin), [GitHub](https://github.com/artem-zinnatullin), [website](https://artemzin.com)
+* Hannes Dorfmann: [Twitter](https://twitter.com/sockeqwe), [GitHub](https://github.com/sockeqwe), [website](http://hannesdorfmann.com)
 
 ## Notes
 
