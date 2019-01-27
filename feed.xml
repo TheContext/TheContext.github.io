@@ -1,20 +1,90 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>The Context</title>
+    <description></description>
+    <link>https://thecontext.github.io</link>
+    <atom:link href="https://thecontext.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Episode 24: Ok Multiplatform with Jesse Wilson and Egor Andreevich</title>
+        <description>In this episode Artem and Hannes chatted with Jesse and Egor from Square about multiplatform development with Kotlin.</description>
+        <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
+        <link>https://thecontext.github.io/posts/episode-24</link>
+        <guid isPermaLink="true">https://thecontext.github.io/posts/episode-24</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Survey: Help us make podcast better</title>
+        <description>Please participate in a little 2 minutes survey to give us feedback on how to improve this show.</description>
+        <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+        <link>https://thecontext.github.io/posts/survey2018</link>
+        <guid isPermaLink="true">https://thecontext.github.io/posts/survey2018</guid>
+      </item>
+    
+      <item>
+        <title>Episode 23: Rise of the Machines (droidcon Berlin 2018)</title>
+        <description>We&amp;#39;ve collaborated with droidcon Berlin 2018 (June 25) where Hannes was speaking about MVI, and they&amp;#39;ve recorded panel discussions for us and allowed us to publish them with our commentary.</description>
+        <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+        <link>https://thecontext.github.io/posts/episode-23</link>
+        <guid isPermaLink="true">https://thecontext.github.io/posts/episode-23</guid>
+      </item>
+    
+      <item>
+        <title>Episode 22: Women in Tech (droidcon Berlin 2018)</title>
+        <description>We&amp;#39;ve collaborated with droidcon Berlin 2018 (June 25) where Hannes was speaking about MVI, and they&amp;#39;ve recorded panel discussions for us and allowed us to publish them with our commentary.</description>
+        <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
+        <link>https://thecontext.github.io/posts/episode-22</link>
+        <guid isPermaLink="true">https://thecontext.github.io/posts/episode-22</guid>
+      </item>
+    
+      <item>
+        <title>Episode 21: Rx Must Die (droidcon Berlin 2018)</title>
+        <description>We&amp;#39;ve collaborated with droidcon Berlin 2018 (June 25) where Hannes was speaking about MVI, and they&amp;#39;ve recorded panel discussions for us and allowed us to publish them with our commentary.</description>
+        <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+        <link>https://thecontext.github.io/posts/episode-21</link>
+        <guid isPermaLink="true">https://thecontext.github.io/posts/episode-21</guid>
+      </item>
+    
+      <item>
+        <title>Episode 20, Part 2: public final Agile</title>
+        <description>In the second part of episode 20 Artem and Hannes continue the discussion with Alexey Alexeev about Agile, Scrum, Kanban and everything related to project management.</description>
+        <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+        <link>https://thecontext.github.io/posts/episode-20-part2</link>
+        <guid isPermaLink="true">https://thecontext.github.io/posts/episode-20-part2</guid>
+      </item>
+    
+      <item>
+        <title>Episode 20, Part 1: public final Agile</title>
+        <description>In this episode Artem and Hannes chatted with Alexey Alexeev about Agile, Scrum, Kanban and everything related to project management.</description>
+        <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+        <link>https://thecontext.github.io/posts/episode-20-part1</link>
+        <guid isPermaLink="true">https://thecontext.github.io/posts/episode-20-part1</guid>
+      </item>
+    
+      <item>
+        <title>Episode 19, Part 2: Model-View-Intent with Benoît Quenaudon from Square</title>
+        <description>In the second part of episode #19 Artur and Hannes continue the discussion with Benoît Quenaudon from Square about Model-View-Intent.</description>
+        <pubDate>Sun, 10 Jun 2018 00:00:00 +0000</pubDate>
+        <link>https://thecontext.github.io/posts/episode-19-part2</link>
+        <guid isPermaLink="true">https://thecontext.github.io/posts/episode-19-part2</guid>
+      </item>
+    
+      <item>
+        <title>Episode 19, Part 1: Model-View-Intent with Benoît Quenaudon from Square</title>
+        <description>In the first part of episode #19 Artur and Hannes chatted with Benoît Quenaudon from Square about Model-View-Intent.</description>
+        <pubDate>Sun, 10 Jun 2018 00:00:00 +0000</pubDate>
+        <link>https://thecontext.github.io/posts/episode-19-part1</link>
+        <guid isPermaLink="true">https://thecontext.github.io/posts/episode-19-part1</guid>
+      </item>
+    
+      <item>
+        <title>Episode 18, Part 2: Android Everywhere</title>
+        <description>In the second part of episode #18 Artur, Hannes and Artem discuss Android TV, Chromecast and Android Auto.</description>
+        <pubDate>Mon, 07 May 2018 00:00:00 +0000</pubDate>
+        <link>https://thecontext.github.io/posts/episode-18-part2</link>
+        <guid isPermaLink="true">https://thecontext.github.io/posts/episode-18-part2</guid>
+      </item>
+    
   </channel>
 </rss>

@@ -1,57 +1,1017 @@
----
-layout: default
-title: "The Context"
-description: "The Context Podcast"
----
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>The Context | The Context</title>
+  <meta name="description" content="The Context Podcast">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<ul class="article-list">
-  {% for post in paginator.posts %}
-    <li class="article-list-item {% if site.scrollappear_enabled %}scrollappear{% endif %}">
-      <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+  <meta property="og:title" content="The Context">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thecontext.github.io/">
+  <meta property="og:description" content="The Context Podcast">
+  <meta property="og:site_name" content="The Context">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://thecontext.github.io/">
+  <meta name="twitter:title" content="The Context">
+  <meta name="twitter:description" content="The Context Podcast">
+
+  
+    <meta property="og:image" content="https://thecontext.github.io/assets/og-image-9fc11be70a452b101c88fada9ad4fc017254a9e4e91b8a924c3858dc29a83467.jpg">
+    <meta name="twitter:image" content="https://thecontext.github.io/assets/og-image-9fc11be70a452b101c88fada9ad4fc017254a9e4e91b8a924c3858dc29a83467.jpg">
+  
+
+  <link href="https://raw.githubusercontent.com/artem-zinnatullin/TheContext-Podcast/master/feed.rss" type="application/rss+xml" rel="alternate" title="TheContext Podcast" />
+
+  
+
+  
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-dark-11327753546b2135c989eee5cd83497a2734b702928d016839d795f6c706e3d5.ico">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon-dark-d161409442b7e523089f24d08d0a55951549ece7504207c376d53b020713494d.png">
+    <link rel="stylesheet" type="text/css" href="/assets/dark-01ff371b8f9987ba02fe69ec29b274d05a855aa1dace0513de6b6abe45b171be.css" integrity="sha256-Af83G4+Zh7oC/mnsKbJ00FqFWqHazgUT3mtqvkWxcb4=" crossorigin="anonymous">
+  
+
+
+</head>
+
+<body>
+    <script type="text/javascript">
+      window.location.replace("https://thecontext.github.io/website/");
+    </script>
+    
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/" class="header-logo" title="The Context">The Context</a>
+  <ul class="header-links">
+    
+      <li>
+        <a href="/about" title="About The Context">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-about">
+  <use href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about" xlink:href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="/subscribe" title="Subscribe">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
+
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+        <ul class="article-list">
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-24" title="Episode 24: Ok Multiplatform with Jesse Wilson and Egor Andreevich">
         <h5>
-          {{ post.title }}
-          {% include svg-icon.html icon="arrow-right" %}
+          Episode 24: Ok Multiplatform with Jesse Wilson and Egor Andreevich
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
         </h5>
       </a>
       <p>
-        {% if post.description %}
-          {{ post.description }}  
-        {% else %}
-          {{ post.excerpt }}
-        {% endif %}
+        
+          In this episode Artem and Hannes chatted with Jesse and Egor from Square about multiplatform development with Kotlin.  
+        
       </p>
       <div class="article-list-footer">
         <span class="article-list-date">
-          {{ post.date | date: "%B %-d, %Y" }}
+          September 27, 2018
         </span>
         <!--
         <span class="article-list-divider">-</span>
         <span class="article-list-minutes">
-          {% capture words %}
-            {{ post.content | number_of_words }}
-          {% endcapture %}
-          {% unless words contains "-" %}
-            {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
-          {% endunless %}
+          
+          
+            1 minute read
+          
         </span>
         <span class="article-list-divider">-</span>
         <div class="article-list-tags">
-          {% for tag in post.tags %}
-            <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag }}</a>
-          {% endfor %}
+          
         </div>
          -->
       </div>
     </li>
-  {% endfor %}
-  {% if paginator.total_pages > 1 %}
-    <li class="article-pagination {% if site.settings.scrollappear_enabled %}scrollappear{% endif %}">
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="article-pagination-left">{% include svg-icon.html icon="arrow-left" %} Older posts</a>
-      {% endif %}
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts {% include svg-icon.html icon="arrow-right" %}</a>
-      {% endif %}
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/survey2018" title="Survey: Help us make podcast better">
+        <h5>
+          Survey: Help us make podcast better
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          Please participate in a little 2 minutes survey to give us feedback on how to improve this show.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          September 20, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
     </li>
-  {% endif %}
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-23" title="Episode 23: Rise of the Machines (droidcon Berlin 2018)">
+        <h5>
+          Episode 23: Rise of the Machines (droidcon Berlin 2018)
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          We&#39;ve collaborated with droidcon Berlin 2018 (June 25) where Hannes was speaking about MVI, and they&#39;ve recorded panel discussions for us and allowed us to publish them with our commentary.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          September 19, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-22" title="Episode 22: Women in Tech (droidcon Berlin 2018)">
+        <h5>
+          Episode 22: Women in Tech (droidcon Berlin 2018)
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          We&#39;ve collaborated with droidcon Berlin 2018 (June 25) where Hannes was speaking about MVI, and they&#39;ve recorded panel discussions for us and allowed us to publish them with our commentary.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          August 17, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-21" title="Episode 21: Rx Must Die (droidcon Berlin 2018)">
+        <h5>
+          Episode 21: Rx Must Die (droidcon Berlin 2018)
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          We&#39;ve collaborated with droidcon Berlin 2018 (June 25) where Hannes was speaking about MVI, and they&#39;ve recorded panel discussions for us and allowed us to publish them with our commentary.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          August 1, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-20-part2" title="Episode 20, Part 2: public final Agile">
+        <h5>
+          Episode 20, Part 2: public final Agile
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In the second part of episode 20 Artem and Hannes continue the discussion with Alexey Alexeev about Agile, Scrum, Kanban and everything related to project management.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          July 1, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-20-part1" title="Episode 20, Part 1: public final Agile">
+        <h5>
+          Episode 20, Part 1: public final Agile
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In this episode Artem and Hannes chatted with Alexey Alexeev about Agile, Scrum, Kanban and everything related to project management.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          July 1, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-19-part2" title="Episode 19, Part 2: Model-View-Intent with Benoît Quenaudon from Square">
+        <h5>
+          Episode 19, Part 2: Model-View-Intent with Benoît Quenaudon from Square
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In the second part of episode #19 Artur and Hannes continue the discussion with Benoît Quenaudon from Square about Model-View-Intent.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          June 10, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-19-part1" title="Episode 19, Part 1: Model-View-Intent with Benoît Quenaudon from Square">
+        <h5>
+          Episode 19, Part 1: Model-View-Intent with Benoît Quenaudon from Square
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In the first part of episode #19 Artur and Hannes chatted with Benoît Quenaudon from Square about Model-View-Intent.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          June 10, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-18-part2" title="Episode 18, Part 2: Android Everywhere">
+        <h5>
+          Episode 18, Part 2: Android Everywhere
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In the second part of episode #18 Artur, Hannes and Artem discuss Android TV, Chromecast and Android Auto.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          May 7, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-18-part1" title="Episode 18, Part 1: Android Everywhere">
+        <h5>
+          Episode 18, Part 1: Android Everywhere
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In the first part of episode #18 Artur, Hannes und Artem discuss Android tablets, Chromebooks and Android Wear (Wear OS).  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          May 5, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-17" title="Episode 17: Switching Gears to C# and .NET">
+        <h5>
+          Episode 17: Switching Gears to C# and .NET
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          Artur chatted with Dmitry Savchenko about C#, .NET and everything in between.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          April 1, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-16" title="Episode 16: Tools">
+        <h5>
+          Episode 16: Tools
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In this episode Artem, Artur and Hannes discuss the tools they use for development.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          March 7, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-15" title="Episode 15: 2017 in Retrospective">
+        <h5>
+          Episode 15: 2017 in Retrospective
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In this episode Artur and Hannes do a retrospective on 2017. They share their personal highlights, favorite talks, disapointments, learnings and much more.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          January 20, 2018
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-14" title="Episode 14: RxJava — the Present and Future with David Karnok (core maintainer)">
+        <h5>
+          Episode 14: RxJava — the Present and Future with David Karnok (core maintainer)
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In this episode we chatted with core maintainer David Karnok about the present and the future of RxJava.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          October 5, 2017
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-13" title="Episode 13: Conductor with Eric Kuck">
+        <h5>
+          Episode 13: Conductor with Eric Kuck
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In this episode we talked about Conductor with creator Eric Kuck.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          August 4, 2017
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-12" title="Episode 12: Instant Apps with Lukas Olsen and Christian Bahl">
+        <h5>
+          Episode 12: Instant Apps with Lukas Olsen and Christian Bahl
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          Hannes chatted with his coworkes Lukas and Christian about Instant Apps.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          May 24, 2017
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-11" title="Episode 11: Migration to RxJava 2 with Artur Dryomov from Juno">
+        <h5>
+          Episode 11: Migration to RxJava 2 with Artur Dryomov from Juno
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          We&#39;ve talked to Artur about Juno&#39;s way to migrate their Android Riders App from RxJava 1 to RxJava 2.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          May 15, 2017
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-10" title="Episode 10: Kotlin Language Design Nitpicking with Dmitry Jemerov from JetBrains">
+        <h5>
+          Episode 10: Kotlin Language Design Nitpicking with Dmitry Jemerov from JetBrains
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          We&#39;ve talked to Dmitry Jemerov from Kotlin team at JetBrains about some language design decisions made in Kotlin  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          May 8, 2017
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-9-part2" title="Episode 9, Part 2: Kotlin Gradle plugin, compilers and build systems with Alexey Tsvetkov">
+        <h5>
+          Episode 9, Part 2: Kotlin Gradle plugin, compilers and build systems with Alexey Tsvetkov
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In the second part of episode 9 we have talked about build systems for android development: Gradle, Buck and Bazel  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          April 14, 2017
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-9-part1" title="Episode 9, Part 1: Kotlin Gradle plugin, compilers and build systems with Alexey Tsvetkov">
+        <h5>
+          Episode 9, Part 1: Kotlin Gradle plugin, compilers and build systems with Alexey Tsvetkov
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In this episode we have talked to Alexey Tsvetkov from Jetbrains about Kotlin Gradle plugin, compilers and build systems.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          April 11, 2017
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-8" title="Episode 8: Damn Functional Programming with Paco Estevez">
+        <h5>
+          Episode 8: Damn Functional Programming with Paco Estevez
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In this episode we have talked with Paco Estevez about Functional Programming and how he applies Functional Programming in his android apps.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          March 2, 2017
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-7" title="Episode 7: React Native with Felipe Lima from Airbnb">
+        <h5>
+          Episode 7: React Native with Felipe Lima from Airbnb
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In this episode we have talked with Felipe Lima about React Native, a cross platform solution to build native mobile apps using JavaScript and React, and how React Native is used at Airbnb.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          December 2, 2016
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-6-part2" title="Episode 6, Part2: Continuous Integration (CI) &amp; Continuous Delivery (CD)">
+        <h5>
+          Episode 6, Part2: Continuous Integration (CI) &amp; Continuous Delivery (CD)
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In this episode we have talked about Continious Integration (CI) and Continuous Delivery (CD). Fernando Cejas gives us some insights how Soundcloud do CI and CD.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          August 31, 2016
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/episode-6-part1" title="Episode 6, Part1: Continuous Integration (CI) &amp; Continuous Delivery (CD)">
+        <h5>
+          Episode 6, Part1: Continuous Integration (CI) &amp; Continuous Delivery (CD)
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          In this episode we have talked about Continious Integration (CI) and Continuous Delivery (CD). Fernando Cejas gives us some insights how Soundcloud do CI and CD.  
+        
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          August 22, 2016
+        </span>
+        <!--
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            1 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+        </div>
+         -->
+      </div>
+    </li>
+  
+  
+    <li class="article-pagination ">
+      
+        <a href="/posts/page/2/" class="article-pagination-left"><svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-left">
+  <use href="/assets/arrow-left-3fbaf3633c5b37e961028aa1ab5a308806edebadcfc1f9f0b30bcf35c3a4fb8c.svg#icon-arrow-left" xlink:href="/assets/arrow-left-3fbaf3633c5b37e961028aa1ab5a308806edebadcfc1f9f0b30bcf35c3a4fb8c.svg#icon-arrow-left"></use>
+</svg>
+ Older posts</a>
+      
+      
+    </li>
+  
 </ul>
+
+        <footer class="footer scrollappear">
+  <p>
+    <a href="/about" title="About The Context">The Context Podcast</a>: A Podcast about Android Development. <a href="/subscribe">Subscribe to our podcast.</a>
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126647247-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-126647247-1');
+  </script>
+
+
+<script src="/assets/vendor-e410f699954f7fa53869d7b5b1d7f7bad51fd08b6320d78d4cbc6483f13b9e23.js" type="text/javascript" integrity="sha256-5BD2mZVPf6U4ade1sdf3utUf0ItjINeNTLxkg/E7niM=" crossorigin="anonymous"></script>
+
+
+  <script src="/assets/webfonts-cd7eae67265bcd101d0f598456b16171b2533d714dcc3a5b6ddacfdf234c4cbc.js" type="text/javascript" integrity="sha256-zX6uZyZbzRAdD1mEVrFhcbJTPXFNzDpbbdrP3yNMTLw=" crossorigin="anonymous"></script>
+
+
+
+  <script src="/assets/scrollappear-7691f37e9154c7d53f7515a518dbb0faf3a73d9b3d5b75522867a134952d0a76.js" type="text/javascript" integrity="sha256-dpHzfpFUx9U/dRWlGNuw+vOnPZs9W3VSKGehNJUtCnY=" crossorigin="anonymous"></script>
+
+
+<script src="/assets/application-7b6260deb98e64a8a42b97f5c18ad2a8c9507d70f9a097a440b354770f979dc7.js" type="text/javascript" integrity="sha256-e2Jg3rmOZKikK5f1wYrSqMlQfXD5oJekQLNUdw+Xncc=" crossorigin="anonymous"></script>
+
+</body>
+</html>
